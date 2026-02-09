@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { verifyPin } from '@/services/pinService';
 const corsHeaders = {
-  'Access-Control-Allow-Origin': 'http://localhost:3001',
+  'Access-Control-Allow-Origin': process.env.WEB_APP_BASE_URL,
   'Access-Control-Allow-Methods': 'POST, OPTIONS',
   'Access-Control-Allow-Headers': 'Content-Type',
 };
